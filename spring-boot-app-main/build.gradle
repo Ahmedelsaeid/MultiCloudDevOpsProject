@@ -21,3 +21,10 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+sonarqube {
+    properties {
+        property 'sonar.host.url', 'http://your-sonarqube-server-url/'
+        property 'sonar.login', '<your-sonarqube-token>'
+        property 'sonar.sourceEncoding', 'UTF-8'
+    }
+}
